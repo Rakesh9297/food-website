@@ -1,0 +1,260 @@
+/* CSS Reset  */
+/* *{
+    margin: 0%;
+    padding: 0%;
+} */
+
+/* css variables  */
+
+/* navigation bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+
+
+}
+
+/* navigation bar: logo and image  */
+#logo {
+    margin: 10px 35px;
+}
+
+#logo img {
+    height: 60px;
+    margin: 3px 6px;
+}
+
+
+/* navigation bar: list styling */
+#navbar {
+    position: sticky;
+    top: 0px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
+#navbar ul li {
+    /* color: azure; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+
+}
+
+/* home section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    justify-content: center;
+    align-items: center;
+    height: 358px;
+}
+
+#home::before {
+    content: "";
+    background: url(/img/food2.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.90;
+
+}
+
+#home h1 {
+    color: rgb(26, 1, 248);
+    text-align: center;
+    font-family: 'Baloo Paaji 2', cursive;
+
+}
+
+#home p {
+    color: rgb(38, 0, 252);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Baloo Paaji 2', cursive;
+
+}
+
+/* services section  */
+#services {
+    display: inline-flex;
+    margin: auto;
+
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: #f2f2f2;
+
+}
+
+
+#services .box img {
+    height: 100px;
+
+
+}
+
+
+/* contact section  */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(logo5.jpg) no-repeat center center/cover;
+}
+
+/* utality classes  */
+.h-primary {
+    font-size: 3.8rem;
+    padding: 1px 0px;
+    text-align: center;
+}
+
+.h-secondary {
+    font-size: 2.8rem;
+    padding: 12px;
+
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: brown;
+    color: aliceblue;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* client section  */
+#client-section {
+    height: 300px;
+    /* position: relative; */
+
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(/img/food2.jpg) no-repeat center center;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+
+
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 1.1rem;
+    border-radius: 9px;
+    font-size: 1.0rem;
+}
+
+#contact-box form {
+    font-size: 1.1rem;
+
+
+}
+
+#contact-box label {
+    width: 20%;
+
+}
+
+#clients {
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+}
+
+#clients img {
+    height: 60px;
+}
+
+.clients-item {
+    padding: 34px;
+}
+
+.cl img {
+    height: auto;
+    display: block;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    width: 50%;
+}
+
+
+.our {
+    text-align: center;
+}
+
+/* footer section  */
+
+footer {
+    background: rgb(0, 0, 0);
+    color: #f2f2f2;
+    padding: 8px 20px;
+
+
+}
+
+.center {
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    justify-content: center;
+}
